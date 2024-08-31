@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confession</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .confession {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* Add some flexibility to the width */
+      width: 80%;
+    }
+    /* Add some media queries for responsiveness */
+    @media (max-width: 768px) {
+      .confession {
+        width: 90%;
+        padding: 10px;
+      }
+    }
+    @media (max-width: 480px) {
+      .confession {
+        width: 95%;
+        padding: 5px;
+      }
+    }
+    .gif {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .gif img {
+      width: 50%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="confession">
+    <h1>My Heartfelt Confession</h1>
+    <p id="confession-text">Dear Raine,</p>
+    <p id="confession-message"></p>
+    <button id="reveal-button">Reveal My Feelings</button>
+    <div class="gif">
+      <img src="https://media.tenor.com/jgZBcWxzbyUAAAAi/cats-love.gif">
+    </div>
+    <audio controls autoplay>
+      <source src="tiramisucake.aac" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
